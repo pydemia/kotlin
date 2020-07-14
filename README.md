@@ -28,3 +28,40 @@ sudo apt-get install adoptopenjdk-11-hotspot
 export JAVA_HOME="/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64"
 sudo ln -sf /usr/bin/java  /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/bin/java
 ```
+
+
+---
+VSCode
+
+`.vscode/launch.json` for Debug Tab:
+```sh
+{
+    "configurations": [
+        {
+            "type": "kotlin",
+            "request": "launch",
+            "name": "Kotlin Launch",
+            "projectRoot": "${workspaceFolder}",
+            "mainClass": "com.sk.airuntime.core.BootApplication"
+        },
+        {
+            "type": "kotlin",
+            "request": "attach",
+            "name": "Kotlin Attach",
+            "hostName": "localhost",
+            "port": 8000,
+            "timeout": 30000
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BootApplication<ai-runtime-core>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.sk.airuntime.core.BootApplication",
+            "projectName": "ai-runtime-core",
+            "args": ""
+        }
+    ]
+}
+```
