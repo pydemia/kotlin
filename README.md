@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-sudo apt install unzip
+sudo apt install -y zip unzip
 curl -s https://get.sdkman.io | bash
 source "/home/pydemia/.sdkman/bin/sdkman-init.sh"
 sdk install kotlin
