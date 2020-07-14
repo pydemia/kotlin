@@ -26,5 +26,5 @@ sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 sudo apt-get install adoptopenjdk-11-hotspot
 
 export JAVA_HOME="/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64"
-sudo ln -s /usr/bin/java  /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/bin/java
+sudo ln -sf /usr/bin/java  /usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/bin/java
 ```
