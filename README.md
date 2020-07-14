@@ -40,9 +40,9 @@ VSCode
         {
             "type": "kotlin",
             "request": "launch",
-            "name": "Kotlin Launch",
+            "name": "Kotlin - Spring Boot-BootApplication<pjtname>",
             "projectRoot": "${workspaceFolder}",
-            "mainClass": "com.sk.airuntime.core.BootApplication"
+            "mainClass": "path.for.your.spring.BootApplication"
         },
         {
             "type": "kotlin",
@@ -54,11 +54,11 @@ VSCode
         },
         {
             "type": "java",
-            "name": "Spring Boot-BootApplication<ai-runtime-core>",
+            "name": "Spring Boot-BootApplication<pjtname>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "com.sk.airuntime.core.BootApplication",
+            "mainClass": "path.for.your.spring.BootApplication"
             "projectName": "ai-runtime-core",
             "args": ""
         }
